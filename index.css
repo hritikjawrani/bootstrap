@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+
+*,*::after,*::before {
+	box-sizing: border-box;
+	font-family: 'DM Sans' , sans-serif;
+	font-weight: 400;
+	color: black;
+}
+
+
+img{
+	max-width: 100%;
+	object-fit: cover;
+}
+
+a{
+	text-decoration: none;
+	display: inline-block;
+
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1,p{
+	margin: 0;
+}
+
+.row{
+	display: flex;
+	background-image: url(./assets/skyline.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	position: relative;
+}
+.container{
+	max-width: 90%;
+
+	margin: 0 auto;
+
+}
+
+ 
+.container .text h4 , p{
+	margin: 0;
+	padding: 0;
+
+}
+
+ /* header  */
+ .header-fixed {
+	 
+	 
+	padding: 20px 40px;
+	height: 80px;
+	color: black;
+	box-sizing: border-box;
+	top:-100px;
+
+	-webkit-transition:top 0.3s;
+	transition:top 0.3s;
+}
+
+.btn , .hero-btn{
+	background: #3f3fea;
+    color: white;
+    border-radius: 12px;
+}
+.hero   .span-tag{
+	color: #0b0be4;
+	font-weight: 500;
+	font-size: 20px;
+	margin-left: 4px;
+}
+
+.header-fixed .header-limiter {
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/*	The header placeholder. It is displayed when the header is fixed to the top of the
+	browser window, in order to prevent the content of the page from jumping up. */
+
+.header-fixed-placeholder{
+	height: 80px;
+	display: none;
+}
+
+/* Logo */
+
+.header-fixed .header-limiter h1 {
+	float: left;
+	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	margin: 0;
+}
+
+.header-fixed .header-limiter h1 span {
+	color: rgb(207, 137, 6);
+}
+
+/* The navigation links */
+
+.header-fixed .header-limiter a {
+	color: black;
+	text-decoration: none;
+}
+
+.header-fixed .header-limiter nav {
+	font:16px Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	float: right;
+}
+
+.header-fixed .header-limiter nav a{
+	display: inline-block;
+	padding: 0 5px;
+	text-decoration:none;
+	color: black;
+	opacity: 0.9;
+}
+
+.header-fixed .header-limiter nav a:hover{
+	opacity: 1;
+}
+
+.header-fixed .header-limiter nav a.selected {
+	 
+	pointer-events: none;
+	opacity: 1;
+}
+
+/* Fixed version of the header */
+
+/* body.fixed .header-fixed {
+	padding: 10px 40px;
+	height: 50px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+body.fixed .header-fixed-placeholder {
+	display: block;
+}
+
+body.fixed .header-fixed .header-limiter h1 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+body.fixed .header-fixed .header-limiter nav {
+	line-height: 28px;
+	font-size: 13px;
+} */
+
+
+/* Making the header responsive */
+
+@media all and (max-width: 600px) {
+
+	.header-fixed {
+		padding: 20px 0;
+		height: 75px;
+	}
+
+	.header-fixed .header-limiter h1 {
+		float: none;
+		margin: -8px 0 10px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 1;
+	}
+
+	.header-fixed .header-limiter nav {
+		line-height: 1;
+		float:none;
+	}
+
+	.header-fixed .header-limiter nav a {
+		font-size: 13px;
+	}
+
+	body.fixed .header-fixed {
+		display: none;
+	}
+
+}
+
+ 
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 1500px;
+}
+ /* header end */
+
+
+/* hero section  */
+
+.hero {
+gap: 7em;
+
+ 
+flex-wrap: wrap-reverse;
+align-items: center;
+min-height: calc(100vh - 93.6px);
+}
+
+.hero>*{
+flex: 1 1 25em;
+}
+
+.hero h1{
+	font-weight: 600;
+	line-height: 1;
+	font-size:clamp(40px,5vw,70px) ;
+}
+
+.hero p {
+	font-weight: 200;
+    font-size: 16px;
+	color: gray;
+    padding: 1em 0
+	
+}
+.hero .head{
+	background: #eef1f1;
+    margin: 20px 0;
+    padding: 0 0;
+    border-radius: 0 18px 26px 0;
+}
+
+.hero .head span{
+	background: orange;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.hero a{
+	font-weight: 700;
+	font-size: 20px;
+	padding: 0.3em 1em;
+	
+}
+.phone{
+z-index: 1;
+}
+
+.skyline{
+position: absolute;
+background-image: url(./assets/skyline.png);
+top: 75%;
+z-index: 0;
+width: 100%;
+}
+
+/* hero section end  */
+ 
+
+
+/* comapnies    */
+
+.companies{
+	background: #f3f3f3;
+    padding: 10px;
+}
+
+.companies h3{
+	text-align: center;
+    margin: 37px 0px;
+    font-weight: 400;
+    font-size: 21px;
+}
+.companies ul{
+	display: flex;
+    justify-content: center;
+    gap: 4em;
+}
+
+.index
+{
+	display: flex;
+}
+
+.image2{
+	background-image: url(./assets/smart-search-bg.png);
+	background-repeat: no-repeat;
+	background-position:center;
+	
+}
+
+/* comapnies  end  */
+
+
+ .text span{
+	 font-size: 30px;
+	 padding: 13px 10px;
+ }
+ .text{
+	padding: 13px 10px;
+ }
+
+ .box-container{
+	 display: flex;
+	 margin-top: 23px;
+ }
+
+ #red{
+	 color: red;
+ }
+ 
+ #green{
+	color: green;
+}
+
+#blue{
+	color: blue;
+}
+
+.footer{
+	
+ 
+    height: 200px;
+    background: #04112e;
+}
+.footer h3{
+	color: white;
+    text-align: center;
+}
+
+.footer ul{
+	display: flex;
+    gap: 1em;
+    /* text-align: center; */
+    justify-content: center;
+}
+.footer ul li{
+	color: white;
+
+}
+
+.footer span{
+	color: orange;
+	white-space: nowrap;
+}
+
+.social{
+	gap: 2em;
+    margin: 12px 0;
+}
+
+.social li{
+	color: white;
+	fill: white;
+	filter: brightness(white);
+}
+
+
+@media screen and (max-width: 620px) {
+	.image-log{
+		line-height: 5;
+	}
+
+	.btn{
+		margin: 7px 0;
+	}
+	.phone{
+		margin-top: 22px;
+	}
+}
