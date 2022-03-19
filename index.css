@@ -429,6 +429,9 @@ width: 100%;
 		line-height: 3;
     margin-top: 3px;
 	}
+	.row{
+		background-image: none;
+	}
 }
 
 @media (min-width:665px) and (max-width: 1140px){
