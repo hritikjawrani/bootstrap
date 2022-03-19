@@ -363,9 +363,10 @@ width: 100%;
 }
 
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 599px) {
 	.image-log{
-		line-height: 5;
+		line-height: 3;
+		margin-top: 28px;
 	}
 
 	.btn{
@@ -373,5 +374,74 @@ width: 100%;
 	}
 	.phone{
 		margin-top: 22px;
+		margin-left: 24px
+	}
+	.row{
+		display: flex;
+    background-image: none;
+     
+    position: relative
+	}
+	.hero{
+		gap: 5em;
+	}
+	.footer ul {
+		display: flex;
+		gap: 7px;
+		/* text-align: center; */
+		justify-content: center;
 	}
 }
+
+@media screen and (max-width: 320px){
+	.text{
+		font-size: 12px;
+	}
+	.footer ul{
+		font-size: 10px;
+	}
+}
+@media (min-width:600px) and (max-width: 640px){
+.row{
+	display: inherit;
+ background-image: url(./assets/skyline.png);
+ background-repeat: no-repeat;
+ background-position: bottom;
+ position: relative;
+}
+ .phone {
+    margin-left: 23px;
+   }
+   .header-fixed .header-limiter h1{
+	   width: 100%;
+   }
+   .hero>* {
+	padding: 20px;
+
+   }
+   .image-log{
+	   line-height: 3;
+	   margin-top: 13px;
+   }
+}
+
+
+@media (min-width:641px) and (max-width: 664px) {
+	.image-log{
+		line-height: 3;
+    margin-top: 3px;
+	}
+}
+
+@media (min-width:665px) and (max-width: 1140px){
+	.image-log{
+ line-height: 1.5;
+	}
+}
+ 
+@media (min-width:1013px) and (max-width: 1453px){
+	.image-log{
+		line-height: 1.5;
+	}
+}
+ 
